@@ -1,0 +1,47 @@
+{
+  "name": "mcp-url-reader",
+  "version": "1.0.0",
+  "description": "MCP server for reading web page content and crawling links recursively",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "mcp-url-reader": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "bunx tsx build.ts",
+    "dev": "bun run src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "web",
+    "url",
+    "reader",
+    "crawler",
+    "content-extraction",
+    "markdown"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "@mozilla/readability": "^0.5.0",
+    "cheerio": "^1.0.0",
+    "jsdom": "^25.0.0",
+    "node-cache": "^5.1.2",
+    "p-queue": "^8.0.0",
+    "turndown": "^7.2.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.1",
+    "@types/turndown": "^5.0.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
